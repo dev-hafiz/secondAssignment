@@ -35,15 +35,15 @@ header{
     margin-bottom: 27px;
     line-height: 79px;
 }
-a {
+a.link-btn {
     color: #FFFFFF;
     background: #E02C6D;
     padding: 10px 24px;
     text-decoration: none;
     border-radius: 2px;
-    transition: .4s linear;
+    transition: .5s linear;
 }
-a:hover {
+a.link-btn:hover {
     background: #8b0637;
 }
 a > i {
@@ -90,4 +90,43 @@ main{
     font-size: 16px;
     line-height: 26px;
     margin-top: 10px;
+}
+
+/*-----------------------
+    Footer Bottom Styles
+------------------------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 153px;
+}
+.footer-box img {
+    width: 483.87px;
+    height: 110px;
+}
+.social-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon  a {
+    text-decoration: none;
+    color: #888787;
+}
+
+.social-icon i {
+    font-size: 26px;
+    margin-right: 6px;
+    transition: .4s linear;
+}
+
+.social-icon a:hover i {
+    transform: scale(1.5);
+}
+
+.coppy-write-sec {
+    text-align: center;
+    font-size: 18px;
+    color: #353535;
 }
