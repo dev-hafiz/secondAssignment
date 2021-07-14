@@ -91,8 +91,35 @@ main{
     line-height: 26px;
     margin-top: 10px;
 }
-
-
+/*-----------------------------
+    Hilights Section Styles 
+----------------------------*/
+.highlights-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 68px;
+    margin-top: 100px;
+}
+.highlights-title {
+    font-size: 48px;
+    width: 469px;
+    height: 120px;
+    line-height: 60px;
+    margin-bottom: 0px;
+    color: #0A0826;
+}
+.highlight-para {
+    width: 404px;
+    height: 113px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+    margin-bottom: 38px;
+}
+.highlights-live-section img {
+    width: 567px;
+    height: 427px;
+}
 /*-----------------------
     Mega Box styles 
 ---------------------*/
@@ -154,6 +181,43 @@ h2.bottom-tittle {
     margin-top: -20px;
     font-weight: 500;
     color: #949191;
+}
+
+/*-------------------------
+   Flexible section styles 
+-------------------------*/
+.flexible-cards{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.flexible-card {
+    width: 340px;
+    height: 186px;
+    position: relative;
+    overflow: hidden;   
+}
+.flexible-card:hover .card-details{
+    display: block; 
+}
+.flexible-card:hover .card-thumbnail {
+    transform: scale(1.1);
+    transition: transform .5s ease-in;
+}
+.flexible-card img {
+    width: 340px;
+    height: 186px;
+}
+
+.card-details {
+    
+    display: none;
+    background: #33333369;
+    position: absolute;
+    top: 0px;
+    padding-bottom: 56px;
+    padding-left: 10px;
+    color: white;
 }
 
 /*-----------------------
